@@ -17,3 +17,26 @@
 - Include the CDN.
 - Download and include files.
 - Package managers - NPM/Yarn.
+
+- Bootstrap have UI utilities : grid system, text and typography, positioning,spacing,alignment,colors,Images,responsive utilities,shadows and sizing.
+- These are the basic components in bootstrap,
+    * Forms and Input groups
+    * Tables
+    * List groups
+    * Cards
+    * Progress bars
+    * Alerts 
+    * Navbar and menus
+    * Buttons and button groups
+    * Paginations
+    * Media objects
+    * Jumbotrons
+    * Badges
+
+- Javascript widgets
+    * Carousel slider
+    * Collapsable accordians
+    * Modals
+    * Tools tips
+    * Popovers
+    * Scrollspy
