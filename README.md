@@ -52,3 +52,12 @@
     * Changes to the navbar(flat design,flexbox instead of floats)
     * Form changes
     * Sass css pre-compailer
+
+### Sides
+- t : For classes that set margin-top or padding-top
+- b : For classes that set margin-bottom or padding-bottom
+- r : For classes that set margin-right or padding-right
+- l : For classes that set marigin-left or padding-left
+- x : For classes that set *-right or *-left
+- y : For classes that set *-bottom or *-top
+- blank : For classes that set all 4 sides
