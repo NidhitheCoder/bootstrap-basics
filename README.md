@@ -40,3 +40,15 @@
     * Tools tips
     * Popovers
     * Scrollspy
+
+### Whats new in bootstrap 4
+    * Flat style over gradient
+    * More subtle look
+    * More color classes
+    * .btn-outline- *classes
+    * Improved grid system and layout(use rem and em instead of pixels,XL tier for extra large screens,Grids now use flex boxes)
+    * Include flexbox utilities
+    * Introduce cards
+    * Changes to the navbar(flat design,flexbox instead of floats)
+    * Form changes
+    * Sass css pre-compailer
