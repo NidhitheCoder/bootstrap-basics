@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      .row-h1 {
+        background: #f4f4f4;
+        height: 250px;
+      }
+
+      .item-h1 {
+        border: 1px solid #333;
+      }
+    </style>
+    <title>Flexbox Classes</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- Flex row and flex items -->
+      <div class="d-flex flex-row row-h1 mb-5">
+        <!-- flex-row is default flex -->
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- Flex row reverse -->
+      <div class="d-flex flex-row-reverse row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- Justify Content -->
+      <div class=" d-flex justify-content-start row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <div class="d-flex justify-content-center row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <div class="d-flex justify-content-end row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <div class="d-flex justify-content-around row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <div class="d-flex justify-content-between row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">FLex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- Flex column -->
+      <div class="d-flex flex-column row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <div class="d-flex flex-column-reverse row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- Vertical align items top-->
+      <div class="d-flex align-items-start row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- Vertical align items center -->
+      <div class="d-flex align-items-center row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- vertical align item bottom -->
+      <div class="d-flex align-items-end row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- vertical align items baseline -->
+      <div class="d-flex align-items-baseline row-h1 mb-5">
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+        <div class="p-4 item-h1">Flex Item</div>
+      </div>
+
+      <!-- Veritcal align items stretch -->
+      <div class="d-flex align-items-stretch row-h1 mb-5">
+        <div class="p-4 item-h1">stretch Flex Item</div>
+        <div class="p-4 item-h1">Stretch Flex Item</div>
+        <div class="p-4 item-h1">Stretch Flex Item</div>
+      </div>
+
+      <!-- Align self -->
+      <div class="d-flex row-h1 mb-5">
+        <div class="align-self-start p-4 item-h1">Flex Item</div>
+        <div class="align-self-center p-4 item-h1">Flex Item</div>
+        <div class="align-self-end p-4 item-h1">Flex Item</div>
+        <div class="align-self-baseline p-4 item-h1">Flex Item</div>
+        <div class="align-self-stretch p-4 item-h1">Flex Item</div>
+      </div>
+
+      <div class="d-flex row-h1 mb-5"></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
