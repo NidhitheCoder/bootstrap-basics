@@ -1,49 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <title>Working with cards</title>
-  </head>
 
-  <body>
-    <div class="container my-5">
-      <!-- Block -->
-      <div class="card mb-5">
-        <div class="card-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          neque quis sit tempora rem assumenda, ducimus officiis possimus modi
-          fuga!
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <title>Working with cards</title>
+</head>
+
+<body>
+  <div class="container my-5">
+    <!-- Block -->
+    <div class="card mb-5">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        neque quis sit tempora rem assumenda, ducimus officiis possimus modi
+        fuga!
       </div>
+    </div>
 
-      <!-- Simple card -->
-      <div class="card mb-5" style="width:20rem">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <h6 class="card-subtitle text-muted">Card subtitle</h6>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            mollitia eum aliquid autem ratione tenetur provident.
-          </p>
-          <a class="btn btn-outline-primary" href="#">Read more</a>
-        </div>
+    <!-- Simple card -->
+    <div class="card mb-5" style="width:20rem">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <h6 class="card-subtitle text-muted">Card subtitle</h6>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+          mollitia eum aliquid autem ratione tenetur provident.
+        </p>
+        <a class="btn btn-outline-primary" href="#">Read more</a>
       </div>
+    </div>
 
-      <!-- card with image -->
+    <!-- card with image -->
+    <div class="card mb-5">
+      <img class="card-img-top" src="https://source.unsplash.com/random" alt="test" />
+      <div class="card-body">
+        <h4 class="card-title">card Title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro
+          deserunt quasi reiciendis qui enim.
+        </p>
+        <a class="btn btn-success block" href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- Card with header -->
+    <div class="card mb-5">
+      <div class="card-header">
+        My card
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+          mollitia eum aliquid autem ratione tenetur provident.
+        </p>
+        <a class="btn btn-danger" href="#">Read more</a>
+      </div>
+    </div>
+
+    <!-- Header footer centered -->
+    <div class="card text-center mb-5">
+      <div class="card-header">
+        My card
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+          mollitia eum aliquid autem ratione tenetur provident.
+        </p>
+        <a class="btn btn-danger" href="#">Read more</a>
+      </div>
+      <div class="card-footer text-muted">
+        2 Days Ago
+      </div>
+    </div>
+
+    <!-- Card with navigation -->
+    <div class="card mb-5">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa,
+          molestias quam voluptas ut in nam?
+        </p>
+        <a class="btn  btn-primary" href="#">Read More</a>
+      </div>
+    </div>
+
+    <!-- Image Overlays -->
+    <div class="card text-white mb-5">
+      <img class="card-img" src="https://source.unsplash.com/random/1000x300" alt="nothing" />
+      <div class="card-img-overlay">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          tenetur minus deserunt tempora voluptatibus quis!
+        </p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 minutes ago</small>
+        </p>
+      </div>
+    </div>
+
+    <!-- background color -->
+    <div class="card bg-success text-white mb-3">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
+          autem voluptatibus architecto neque perspiciatis velit vitae
+          recusandae deserunt cupiditate!
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-danger text-white mb-3">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
+          autem voluptatibus architecto neque perspiciatis velit vitae
+          recusandae deserunt cupiditate!
+        </p>
+      </div>
+    </div>
+
+    <div class="card bg-info text-white mb-3">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
+          autem voluptatibus architecto neque perspiciatis velit vitae
+          recusandae deserunt cupiditate!
+        </p>
+      </div>
+    </div>
+
+    <!-- card outline -->
+    <div class="card border-success mb-3">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
+          autem voluptatibus architecto neque perspiciatis velit vitae
+          recusandae deserunt cupiditate!
+        </p>
+      </div>
+    </div>
+
+    <div class="card border-danger mb-3">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
+          autem voluptatibus architecto neque perspiciatis velit vitae
+          recusandae deserunt cupiditate!
+        </p>
+      </div>
+    </div>
+
+    <div class="card border-info   mb-5">
+      <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
+          autem voluptatibus architecto neque perspiciatis velit vitae
+          recusandae deserunt cupiditate!
+        </p>
+      </div>
+    </div>
+
+    <!-- card columns -->
+    <div class="card-columns mb-5">
+
       <div class="card mb-5">
-        <img
-          class="card-img-top"
-          src="https://source.unsplash.com/random"
-          alt="test"
-        />
+        <img class="card-img-top img-fluid" src="https://source.unsplash.com/random" alt="test" />
         <div class="card-body">
           <h4 class="card-title">card Title</h4>
           <p class="card-text">
@@ -54,190 +206,90 @@
         </div>
       </div>
 
-      <!-- Card with header -->
-      <div class="card mb-5">
-        <div class="card-header">
-          My card
-        </div>
+      <div class="card p-3">
+        <blockquote>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Corrupti fuga ipsa nam laboriosam ipsum veniam ut
+            debitis fugit a architecto.</p>
+          <footer>
+            <small>
+              Someone famous in
+              <cite title="Source Title">Source Title</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/300x200" alt="">
         <div class="card-body">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title">Card Title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati ab omnis aliquid
+            voluptas quibusdam est sint quaerat natus voluptate dolor?</p>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            mollitia eum aliquid autem ratione tenetur provident.
+            <small class="text-muted">Last Updated 3 mins ago</small>
           </p>
-          <a class="btn btn-danger" href="#">Read more</a>
         </div>
       </div>
 
-      <!-- Header footer centered -->
-      <div class="card text-center mb-5">
-        <div class="card-header">
-          My card
-        </div>
+      <div class="card bg-dark text-white p-3">
+        <blockquote class="card-bodyquote">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex exercitationem saepe adipisci. Maxime odit hic
+            necessitatibus, accusamus nesciunt excepturi! Sint.</p>
+          <footer class="blockquote-footer">
+            <small>Someone famous in<cite title="Source Title">Source Title</cite></small>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="card text-center">
         <div class="card-body">
-          <h4 class="card-title">Card title</h4>
+          <h4 class="card-title">Card Title</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam inventore adipisci animi
+            error mollitia ipsa quo ex et id porro.</p>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
-            mollitia eum aliquid autem ratione tenetur provident.
-          </p>
-          <a class="btn btn-danger" href="#">Read more</a>
-        </div>
-        <div class="card-footer text-muted">
-          2 Days Ago
-        </div>
-      </div>
-
-      <!-- Card with navigation -->
-      <div class="card mb-5">
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa,
-            molestias quam voluptas ut in nam?
-          </p>
-          <a class="btn  btn-primary" href="#">Read More</a>
-        </div>
-      </div>
-
-      <!-- Image Overlays -->
-      <div class="card text-white mb-5">
-        <img
-          class="card-img"
-          src="https://source.unsplash.com/random/1000x300"
-          alt="nothing"
-        />
-        <div class="card-img-overlay">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            tenetur minus deserunt tempora voluptatibus quis!
-          </p>
-          <p class="card-text">
-            <small class="text-muted">Last updated 3 minutes ago</small>
+            <small class="text-muted">
+              Last Updated 3 mis ago.
+            </small>
           </p>
         </div>
       </div>
 
-      <!-- background color -->
-      <div class="card bg-success text-white mb-3">
-        <div class="card-header">Header</div>
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
-            autem voluptatibus architecto neque perspiciatis velit vitae
-            recusandae deserunt cupiditate!
-          </p>
-        </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/random/300x200" 
+        alt="nothing" class="card-img-top img-fluid">
+      </div>
+      <div class="card-body">
+        <blockquote class="card-bodyquote">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae architecto fuga sequi quisquam pariatur, aliquam fugit eos placeat adipisci mollitia!</p>
+          <footer class="blockquote-footer">
+            <small>Someone in famous <cite title="Source title">Source Title</cite></small>
+          </footer>
+        </blockquote>
       </div>
 
-      <div class="card bg-danger text-white mb-3">
-          <div class="card-header">Header</div>
-          <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
-              autem voluptatibus architecto neque perspiciatis velit vitae
-              recusandae deserunt cupiditate!
-            </p>
-          </div>
-        </div>
-
-        <div class="card bg-info text-white mb-3">
-            <div class="card-header">Header</div>
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
-                autem voluptatibus architecto neque perspiciatis velit vitae
-                recusandae deserunt cupiditate!
-              </p>
-            </div>
-          </div>
-
-          <!-- card outline -->
-          <div class="card border-success mb-3">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
-                  autem voluptatibus architecto neque perspiciatis velit vitae
-                  recusandae deserunt cupiditate!
-                </p>
-              </div>
-            </div>
-
-            <div class="card border-danger mb-3">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
-                    autem voluptatibus architecto neque perspiciatis velit vitae
-                    recusandae deserunt cupiditate!
-                  </p>
-                </div>
-              </div>
-
-              <div class="card border-info   mb-3">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quod
-                      autem voluptatibus architecto neque perspiciatis velit vitae
-                      recusandae deserunt cupiditate!
-                    </p>
-                  </div>
-                </div>
-
-                <!-- card columns -->
-                <div class="card-columns">
-
-                    <div class="card mb-5">
-                        <img
-                          class="card-img-top img-fluid"
-                          src="https://source.unsplash.com/random"
-                          alt="test"
-                        />
-                        <div class="card-body">
-                          <h4 class="card-title">card Title</h4>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni porro
-                            deserunt quasi reiciendis qui enim.
-                          </p>
-                          <a class="btn btn-success block" href="#">Read More</a>
-                        </div>
-                      </div>
-
-                </div>
-
+    <div class="card bg-primary text-white">
+      <div class="card-body">
+        <h4 class="card-title">Card Title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias fuga accusantium consequatur beatae odit architecto doloremque exercitationem ullam libero!</p>
+        <p class="card-text">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </p>
+      </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+  </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
