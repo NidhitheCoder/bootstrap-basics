@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <title>Grid system</title>
+</head>
+
+<body>
+    <div class="container my-5">
+
+        <!-- Responsive grid -->
+        <div class="row mb-5">
+            <div class="col-sm-6 col-md-8 col-lg-9 col-xl-10" style="border:1px solid #333">
+                <ul>
+                    <li>6 columns on small screens</li>
+                    <li>8 columns on medium screens</li>
+                    <li>9 columns on large screens</li>
+                    <li>10 columns on extra large screens</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="border:1px solid #333">
+                <ul>
+                    <li>6 columns on small screens</li>
+                    <li>8 columns on medium screens</li>
+                    <li>9 columns on large screens</li>
+                    <li>10 columns on extra large screens</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- equal width -->
+        <div class="row mb-5">
+            <div class="col" style="border:1px solid #333">Equal width</div>
+            <div class="col" style="border:1px solid #333">Equal width</div>
+            <div class="col" style="border:1px solid #333">Equal width</div>
+            <div class="col" style="border:1px solid #333">Equal width</div>
+        </div>
+
+        <!-- Equal width multi row -->
+        <div class="row mb-5">
+            <div class="col" style="border:1px solid #333">Equal width</div>
+            <div class="col" style="border:1px solid #333">Equal width</div>
+            <div class="w-100" style="border:1px solid #333"></div>
+            <div class="col" style="border:1px solid #333">Equal width</div>
+            <div class="col" style="border:1px solid #333">Equal width</div>
+        </div>
+
+        <!-- Auto layout -->
+        <div class="row mb-5">
+            <div class="col" style="border:1px solid #333">Auto layout</div>
+            <div class="col-6" style="border:1px solid #333">Auto layout</div>
+            <div class="col-4" style="border:1px solid #333">Auto layout</div>
+        </div>
+
+        <!-- Equal width stacked -->
+        <div class="row mb-5">
+            <div class="col-sm" style="border:1px solid #333">Equal width stack</div>
+            <div class="col-sm" style="border:1px solid #333">Equal width stack</div>
+            <div class="col-sm" style="border:1px solid #333">Equal width stack</div>
+        </div>
+
+        <!-- Ordering -->
+        <div class="row mb-5">
+            <div class="col order-3" style="border:1px solid #333">First</div>
+            <div class="col order-2" style="border:1px solid #333">Second</div>
+            <div class="col order-1" style="border:1px solid #333">Third</div>
+        </div>
+
+        <!-- Offsetting -->
+
+
+        <div class="row mb-5">
+            <!-- 6 column div offset by 3 -->
+            <div class="col-md-6 offset-md-3" style="border:1px solid #333">.col-md-6 .offset-md-3</div>
+        </div>
+
+        <div class="row mb-5">
+            <!-- Two 4 column divs, the second offset by 4 -->
+            <div class="col-md-4" style="border:1px solid #333">.col-md-4</div>
+            <div class="col-md-4 offset-md-4" style="border:1px solid #333">.col-md-4 .offset-md-4</div>
+        </div>
+
+        <div class="row mb-5">
+            <!-- Two 3 column divs, both offset by 3 -->
+            <div style="border:1px solid #333" class="col-md-3 offset-md-3">col-md-3 .offset-md-3</div>
+            <div style="border:1px solid #333" class="col-md-3 offset-md-3">col-md-3 .offset-md-3</div>
+        </div>
+
+        <!-- Nesting -->
+        <div class="row">
+            <div class="col-sm-9" style="border:1px solid blue">
+                Level 1: .col-sm-6
+                <div class="row">
+                    <div class="col-8 col-sm-6" style="border:1px solid red">
+                        Level 2: .col-8 col-sm-6
+                    </div>
+                    <div class="col-4 col-sm-6" style="border:1px solid red">
+                        Level 2: .col-4 col-sm-6
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
